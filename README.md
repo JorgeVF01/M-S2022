@@ -13,7 +13,7 @@
 
 ## Project description
 
-The aim of this project is to model and simulate a N-Body system applying Physics Laws. The implementation is expected to be totally or almost totally with `C#` in order to exploite its processing capacities.
+The aim of this project is to model and simulate a N-Body system applying Physics Laws. The implementation is expected to be totally or almost totally with `C` in order to exploite its processing capacities.
 
 Future definition: data and specific problem.
 
