@@ -11,7 +11,7 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
      · Mail: paaoogh@gmail.com
 
 - Tech leader: Kevin Gómez 
-     · Mail: kgomes0800@gmail.com
+     · Mail: kgomez0800@gmail.com
      
 
 
