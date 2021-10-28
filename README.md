@@ -13,11 +13,24 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
 - Tech leader: Kevin Gómez 
      · Mail: kgomez0800@gmail.com
      
+##
+
+The aim of this project is to model and simulate the SARS-COV19 growth and behavior as a N-body system applying physics laws to the model.
+
+## Introduction
+
+N-body simulations have been a powerful tool to describe natural phenomena, however, most of the N-body problems are unsolvable but can be approximated with numerical methods. Its origin is related with the measuring of time based on sky observations centuries ago, as a matter of fact, astronomers were fitting models to describe the Solar System with all the data collected about the sky.
+
+Isaac Newton solved a sort of 2-Body problem with the formulation of classical gravity interactions, nevertheless he could not solve a 3-Body problem presuming that the problem exceed the human knowledge as it must consider complex force and motion interactions. Leonhard Euler described and solved a restricted 3-Body problem as a mathematical problem.
 
 
-## Project description
+![alt text](https://serving.photos.photobox.com/93652483ac5ecb2cf4da2d31f6a9d47adf85c21bb10546d0543fed263f0d2d1b8f77f2d6.jpg)
 
-The aim of this project is to model and simulate the SARS-COV19 growth and behaviour in Mexico. The implementation is expected to be totally or almost totally with `C` in order to exploite its processing capacities.
+
+
+Python Implementation of a simple N-Body simulation.
+
+## Justification
 
 Data: COVID-19 México provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/). Data will take only 2020 and from January to March of 2021 due to the schema change in the data made by the data provider. We are defining if we will focus on the whole contry or will make different simulations in some places (such as Michoacán and Mexico City). 
 
