@@ -38,7 +38,7 @@ The purpose of this project is to analyze previous data of covid spreading in Me
 
 * Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/). Data will take only 2020 lapse and from January to March of 2021 due to the schema change in the data made by the data provider.
 
-* Implmenet a N-Body system with `Python` in order to describe the COVID-19 Spreading and Behavior as a pandemic.
+* Implmenet a N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic.
 
 * Implement a Death function triggering a statement of no interaction between the death body and the population.  
 
