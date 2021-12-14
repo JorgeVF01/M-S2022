@@ -26,9 +26,11 @@ Isaac Newton solved a sort of 2-Body problem with the formulation of classical g
 
 ![alt text](https://serving.photos.photobox.com/93652483ac5ecb2cf4da2d31f6a9d47adf85c21bb10546d0543fed263f0d2d1b8f77f2d6.jpg)
 
+*Python Implementation of a simple N-Body simulation. Mocz, P. (2020)*
 
 
-Python Implementation of a simple N-Body simulation.
+
+
 
 ## Justification
 
@@ -36,7 +38,7 @@ The purpose of this project is to analyze previous data of covid spreading in Me
 
 ## Objectives and methodology
 
-* Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/) and we will take only the data of cases in the city of Morelia to keep the complexity feascible to manage. Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
+* Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/). Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
 
 * Implement an N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic based on the CIER model based on the Kuzdeuov, A. et al publication "Particle-Based COVID-19 Simulator with Contact Tracing and Testing" (2020) with the following steps:
      * Definition of initial conditions based on the CONACyT data retrieved from the specified dates.
@@ -55,7 +57,9 @@ Nuraini, N; Khairudin, K; Apri, M. (2020) "Modeling Simulation of COVID-19 In In
 
 Ortigoza, G; Lorandi, A; Neri, I. (2020) "Simulación Numérica y Modelación Matemática de la propagación del Covid 19 en el estado de Veracruz". Revista Mexicana Médica Forense, 5(3): 21-37 ISSN: 2448-8011. Retrieved from: https://www.medigraphic.com/pdfs/forense/mmf-2020/mmf203c.pdf
 
-Aguilar, R. (n.d.). The N-body problem - astrosen.unam.mx. Instituto de Astronomía. Retrieved October 26, 2021, from https://www.astrosen.unam.mx/~aguilar/MySite/Outreach_files/Nbody1_eng.pdf. 
+Aguilar, R. (n.d.). The N-body problem - astrosen.unam.mx. Instituto de Astronomía. Retrieved October 26, 2021, from https://www.astrosen.unam.mx/~aguilar/MySite/Outreach_files/Nbody1_eng.pdf.
+
+Mocz, P. (2020) "Create Your Own N-body Simulation (With Python)" Retrived October26, 2021, from: https://medium.com/swlh/create-your-own-n-body-simulation-with-python-f417234885e9
 
 ### Disclaimer: 
 This project is protected under the GNU Licence v3, please refer to the document in case of any doubt towards referencing and usage of this project.
