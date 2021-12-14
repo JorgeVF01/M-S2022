@@ -42,7 +42,7 @@ Local data will be retrieved, not only for complexity purposes, but also due to 
 
 * Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/) and we will take only the data of cases in the city of Morelia to keep the complexity feascible to manage. Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
 
-* Implement an N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic based on the CIER model based on the Kuzdeuov, A. et al publication "Particle-Based COVID-19 Simulator with Contact Tracing and Testing" (2020) with the following steps:
+* Implement an N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic based on the SIR model based on the Kuzdeuov, A. et al publication "Particle-Based COVID-19 Simulator with Contact Tracing and Testing" (2020) with the following steps:
      * Definition of initial conditions based on the CONACyT data retrieved from the specified dates.
      * Implementation of the Monte-Carlo Method witht the eXtreme programming paradigm. 
      * Production of a graphical mp4 format tool to preview the interaction of people representation.
