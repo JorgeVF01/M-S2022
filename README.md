@@ -34,16 +34,17 @@ Python Implementation of a simple N-Body simulation.
 
 The purpose of this project is to analyze previous data of covid spreading in Mexico and recreate an environment with an arbitrary population of healthy individuals and an initial point of infected people, all the bodies will interact between each other causing the contagion of the healthy individuals, at the same time some of the infected individuals will develop immunity meanwhile another infected community will die. As is expected, at some point all the survivors will develop immunity.  Finally, we are looking for an  accurate model that can describe the virus behavior over certain time intervals and most importantly these results will be helpful to plan strategies of virus scan and protection on hard to reach areas like rural communities which are far away from vaccinations plans and the latest technological innovations.
 
-## Objectives
+## Objectives and methodology
 
-
-
-* Implmenet a N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic.
+* Implement an N-Body system with `Python3` in order to describe the COVID-19 Spreading and Behavior as a pandemic based on the CIER model based on the Kuzdeuov et al (2020) paper with the following steps:
+*     Definition of initial conditions.
+*     Implementation of the Monte-Carlo Method using as a reference
 
 * Implement a Death function triggering a statement of no interaction between the death body and the population.
+ 
 * Calculate contagion rate. 
 
-* Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/). Data will take only 2020 lapse and from January to March of 2021 due to the schema change in the data made by the data provider.
+* Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/). Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
 
 ## References
 
