@@ -44,8 +44,8 @@ The purpose of this project is to analyze previous data of covid spreading in Me
      * Production of a graphical mp4 format tool to preview the interaction of people representation.
 
 * Implement a Death function triggering a statement of no interaction between the death body and the population.
- 
-* Calculate contagion rate.
+     * Create a method to calculate the death probability of an infected particle based on the contagion time of the particle and features like age.
+     * Calculate a contagion rate in order to simulate an real-life environment where not every interaction with an infected particle and a susceptible makes the last particle infected.
 
 
 
