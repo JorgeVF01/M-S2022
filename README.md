@@ -18,8 +18,16 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
 The aim of this project is to model and simulate the SARS-COV19 growth and behavior *Aquí va algo*
 
 ## Introduction
+Conservation of Momentum is the principal them we'll talk, so first we have to explain what is conservation of momentum, is a general law of physics, a general idea of this is, if you apply forces on a object it is going to keep moving forever if and only if no other force afect the object but if this object is afected for at least one forces this will transmit the first force to the second so momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
 
-*Aquí va mucho algo*
+One example of conservation of momentum is Newton's cruble is device that demonstrates the conservation of momentum, it consists of four or more balls hanging together, and when one is lifted from its place functioning as a pendulum and then released, it will collide with the other balls, but not all of them will move, but will transfer their momentum to the ball on the opposite side to the one that moved.
+
+the behavior of one particle can be describe by the next equation
+
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;p=mv" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+where p is a particle, m is the mass adn v is the velocity
+
 
 
 
