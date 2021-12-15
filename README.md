@@ -1,5 +1,5 @@
 # M-S2022
-# Modeling and Sumulation: N-body modeling
+# Modeling and Sumulation: COVID-19 simulation Momentum Conservation
 This is the final project of the subject Modeling and Simulation of the [Escuela Nacional de Estudios Superiores UNAM campus Morelia](https://www.enesmorelia.unam.mx/).
 
 ## Contact
@@ -15,18 +15,11 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
      
 ##
 
-The aim of this project is to model and simulate the SARS-COV19 growth and behavior as a N-body system applying physics laws to the model.
+The aim of this project is to model and simulate the SARS-COV19 growth and behavior *Aquí va algo*
 
 ## Introduction
 
-N-body simulations have been a powerful tool to describe natural phenomena, however, most of the N-body problems are unsolvable but can be approximated with numerical methods. Its origin is related with the measuring of time based on sky observations centuries ago, as a matter of fact, astronomers were fitting models to describe the Solar System with all the data collected about the sky.
-
-Isaac Newton solved a sort of 2-Body problem with the formulation of classical gravity interactions, nevertheless he could not solve a 3-Body problem presuming that the problem exceeds human knowledge as it must consider complex force and motion interactions. Leonhard Euler described and solved a restricted 3-Body problem as a mathematical problem.
-
-
-![alt text](https://serving.photos.photobox.com/93652483ac5ecb2cf4da2d31f6a9d47adf85c21bb10546d0543fed263f0d2d1b8f77f2d6.jpg)
-
-*Python Implementation of a simple N-Body simulation. Mocz, P. (2020)*
+*Aquí va mucho algo*
 
 
 
@@ -38,7 +31,7 @@ The purpose of this project is to analyze previous data of covid spreading in Me
 
 Local data will be retrieved, not only for complexity purposes, but also due to the fact that local data is important because not all socioeconomic, cultural and other conditions affect on the strategies that each health organization and government take into consideration. COVID-19 has had an effect diferent in many countries, states and cities; then, understading the behaviour of phenomena like a pandemic requieres from a lot of analysis. Modeling this behaviour, taking into account different external factors, could benefit future interdisciplinary work.
 
-## Objectives and methodology
+## Objectives
 
 * Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/) and we will take only the data of cases in the city of Morelia to keep the complexity feascible to manage. Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
 
@@ -51,7 +44,9 @@ Local data will be retrieved, not only for complexity purposes, but also due to 
      * Create a method to calculate the death probability of an infected particle based on the contagion time of the particle and features like age.
      * Calculate a contagion rate in order to simulate an real-life environment where not every interaction with an infected particle and a susceptible produces the healthy particle infected.
 
+## Methodology
 
+*Aquí va mucho*
 
 ## References
 Kuzdeuov, A., Karabay, A., Baimukashev, D., Ibragimov, B., et al. (2020). "Particle-Based COVID-19 Simulator with Contact Tracing and Testing". Preprint for Medical and Healthe Services. [https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full](https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full)
@@ -61,9 +56,7 @@ Nuraini, N; Khairudin, K; Apri, M. (2020) "Modeling Simulation of COVID-19 In In
 
 Ortigoza, G; Lorandi, A; Neri, I. (2020) "Simulación Numérica y Modelación Matemática de la propagación del Covid 19 en el estado de Veracruz". Revista Mexicana Médica Forense, 5(3): 21-37 ISSN: 2448-8011. Retrieved from: https://www.medigraphic.com/pdfs/forense/mmf-2020/mmf203c.pdf
 
-Aguilar, R. (n.d.). The N-body problem - astrosen.unam.mx. Instituto de Astronomía. Retrieved October 26, 2021, from https://www.astrosen.unam.mx/~aguilar/MySite/Outreach_files/Nbody1_eng.pdf.
 
-Mocz, P. (2020) "Create Your Own N-body Simulation (With Python)" Retrived October26, 2021, from: https://medium.com/swlh/create-your-own-n-body-simulation-with-python-f417234885e9
 
 ### Disclaimer: 
 This project is protected under the GNU Licence v3, please refer to the document in case of any doubt towards referencing and usage of this project.
