@@ -56,6 +56,8 @@ Noting that every state is in function of time, that's because the time of state
 
 ![image](https://i.ibb.co/m0Vwpjm/seir-diagram.png)
 
+Note that as explained before, the transitions between the states of health will be described as functions of time, for example, in real life the time between being infected and being recovered is approximately 10 to 14 days.  In some cases the state functions work with ratios, for example, the transition between infected and severed infected will depend on the time and a ratio that describes a probability of turn on a worse health states, something similar happens with the transition between the severe infected state and the Dead state where there will also be a ratio that describes the probability of death.
+
 ## References
 Kuzdeuov, A., Karabay, A., Baimukashev, D., Ibragimov, B., et al. (2020). "Particle-Based COVID-19 Simulator with Contact Tracing and Testing". Preprint for Medical and Healthe Services. [https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full](https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full)
 
