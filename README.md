@@ -40,6 +40,12 @@ Local data will be retrieved, not only for complexity purposes, but also due to 
 
 * Use initial parameters based on data provided by the [CONACYT and Centro Geo](https://datos.covid-19.conacyt.mx/) and we will take only the data of cases in the city of Morelia to keep the complexity feascible to manage. Data will take only within lapse of July 1st to October 31st as there is a clear trend shown in the CONACyT graphs about cumulative and confirmed cased.
 
+* Create a conservation of momentum model to define and describe the interactions of each particle with space and with other particles, the interaction is an important part because when one particle be close of other can transmit momentum to other and activate certain states like exposed health state. 
+ 
+* Implement a  SEIR model for describe the interaction abd state of the particles, when a particle should turn in an infected particle or a dead, this model will be have a function of time with probability of being infected and a infected particle have a similar function with a probability of turn a severed infected and a severed infected particle can turn a dead particle or a recovered particle.
+ 
+* show with graphics how many particles were infected,  recovered, or dead.
+
 
 
 ## Methodology
