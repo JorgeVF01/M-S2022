@@ -13,16 +13,16 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
 - Tech leader: Kevin Gómez 
      · Mail: kgomez0800@gmail.com
      
-##
 
-The aim of this project is to model and simulate the SARS-COV19 growth and behavior *Aquí va algo*
 
 ## Introduction
 
-Conservation of Momentum is the principal them we'll talk, so first we have to explain what is conservation of momentum, is a general law of physics, a general idea of this is, if you apply forces on a object it is going to keep moving forever if and only if no other force affect the object but if this object is affected for at least one forces this will transmit the first force to the second so momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
-One example of conservation of momentum is Newton's cradle is device that demonstrates the conservation of momentum, it consists of four or more balls hanging together, and when one is lifted from its place functioning as a pendulum and then released, it will collide with the other balls, but not all of them will move, but will transfer their momentum to the ball on the opposite side to the one that moved.
+Conservation of Momentum is one of the main topics in the project, so first we have to explain what is conservation of momentum, is a general law of physics, an idea of this is, if you apply forces on a object it is going to keep moving forever if and only if no other force affect the object but if this object is affected for at least one forces this will transmit the first force to the second so momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
+One example of conservation of momentum is Newton's cradle device that demonstrates the conservation of momentum, it consists of four or more balls hanging together, and when one is lifted from its place functioning as a pendulum and then released, it will collide with the other balls, but not all of them will move, but will transfer their momentum to the ball on the opposite side to the one that moved.
 
-the behavior of one particle can be describe by the next equation p = mv where p is a particle, m is the mass and v is the velocity and if exist more than one particle the equation is  ![image](https://user-images.githubusercontent.com/79944448/146283321-2b0f55a3-bd9d-41d0-a257-92d761413ddb.png) 
+the behavior of one particle can be describe by the next equation p = mv where p is a particle, m is the mass and v is the velocity and if exist more than one particle the equation is  
+
+![image](https://user-images.githubusercontent.com/79944448/146283321-2b0f55a3-bd9d-41d0-a257-92d761413ddb.png) 
 
 The momentum of conservation can be seen as a vector than have a magnitude and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction because of the collisions of many molecules
 
@@ -51,7 +51,17 @@ Local data will be retrieved, not only for complexity purposes, but also due to 
 
 ## Methodology
 
-*Aquí va mucho*
+The interaction between individuals is based on Particles methods and the conservation of momentum properties, hence every Particle (individual) has a position on the plane, velocity, state of health and the time that the particle has spent in the state of health. Also, the definition of an interaction threshold between particles is one of the most important parts of the simulations as it will activate some functions to change the health state of the Particle.
+
+The states of health of the COVID-19 an its activations  an transitions are shaped with a SEIR model, specifically this type of model has 4 main states of health:
+* Susceptible, these are the common people that haven't had any type of interaction with the virus.
+* Exposed, people of this group are the individuals that have been infected but they are not infectious agents any more.
+* Infected, individuals who have the disease and are contagious agents.
+* Recovered, these people became immune after being infected.
+
+Noting that every state is in function of time, that's because the time of state is an important property of the Particles. Also, more complexity is meant to be added to the model, as we want to ensure a death function that will be activated after a new state of severe infected, so for this project there are going to be 6 states of health. To a better understanding of the modelation and the states of health we present the following chart:
+
+![image](https://i.ibb.co/m0Vwpjm/seir-diagram.png)
 
 ## References
 Kuzdeuov, A., Karabay, A., Baimukashev, D., Ibragimov, B., et al. (2020). "Particle-Based COVID-19 Simulator with Contact Tracing and Testing". Preprint for Medical and Healthe Services. [https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full](https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full)
