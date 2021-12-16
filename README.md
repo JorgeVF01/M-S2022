@@ -48,7 +48,7 @@ The interaction between individuals is based on Particles methods and the conser
 
 The states of health of the COVID-19 an its activations  an transitions are shaped with a SEIR model, specifically this type of model has 4 main states of health:
 * Susceptible, these are the common people that haven't had any type of interaction with the virus.
-* Exposed, people of this group are the individuals that have been infected but they are not infectious agents any more.
+* Exposed, individuals who had contact with an infected Particle.
 * Infected, individuals who have the disease and are contagious agents.
 * Recovered, these people became immune after being infected.
 
