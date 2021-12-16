@@ -18,15 +18,15 @@ This is the final project of the subject Modeling and Simulation of the [Escuela
 The aim of this project is to model and simulate the SARS-COV19 growth and behavior *Aquí va algo*
 
 ## Introduction
-Conservation of Momentum is the principal them we'll talk, so first we have to explain what is conservation of momentum, is a general law of physics, a general idea of this is, if you apply forces on a object it is going to keep moving forever if and only if no other force afect the object but if this object is afected for at least one forces this will transmit the first force to the second so momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
 
-One example of conservation of momentum is Newton's cruble is device that demonstrates the conservation of momentum, it consists of four or more balls hanging together, and when one is lifted from its place functioning as a pendulum and then released, it will collide with the other balls, but not all of them will move, but will transfer their momentum to the ball on the opposite side to the one that moved.
+Conservation of Momentum is the principal them we'll talk, so first we have to explain what is conservation of momentum, is a general law of physics, a general idea of this is, if you apply forces on a object it is going to keep moving forever if and only if no other force affect the object but if this object is affected for at least one forces this will transmit the first force to the second so momentum is neither created nor destroyed, but only changed through the action of forces as described by Newton's laws of motion.
+One example of conservation of momentum is Newton's cradle is device that demonstrates the conservation of momentum, it consists of four or more balls hanging together, and when one is lifted from its place functioning as a pendulum and then released, it will collide with the other balls, but not all of them will move, but will transfer their momentum to the ball on the opposite side to the one that moved.
 
-the behavior of one particle can be describe by the next equation *p = mv*  where *p* is a particle, *m* is the mass adn *v* is the velocity and if exist more than one particle the equation is 
+the behavior of one particle can be describe by the next equation p = mv where p is a particle, m is the mass and v is the velocity and if exist more than one particle the equation is  ![image](https://user-images.githubusercontent.com/79944448/146283321-2b0f55a3-bd9d-41d0-a257-92d761413ddb.png) 
 
-![image](https://user-images.githubusercontent.com/79944448/146283321-2b0f55a3-bd9d-41d0-a257-92d761413ddb.png) 
+The momentum of conservation can be seen as a vector than have a magnitude and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction because of the collisions of many molecules
 
-The momentum of conservartion can be seeing as a vector than have a magnitud and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction because of the collisions of many molecules
+
 
 
 
