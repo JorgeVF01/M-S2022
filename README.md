@@ -1,5 +1,5 @@
 # M-S2022
-# Modeling and Sumulation: Conservation of Momentum for COVID-19 simulation
+# Modeling and Simulation: Conservation of Momentum for COVID-19 simulation
 This is the final project of the subject Modeling and Simulation of the [Escuela Nacional de Estudios Superiores UNAM campus Morelia](https://www.enesmorelia.unam.mx/).
 
 ## Contact
