@@ -65,6 +65,8 @@ Nuraini, N; Khairudin, K; Apri, M. (2020) "Modeling Simulation of COVID-19 In In
 Ortigoza, G; Lorandi, A; Neri, I. (2020) "Simulación Numérica y Modelación Matemática de la propagación del Covid 19 en el estado de Veracruz". Revista Mexicana Médica Forense, 5(3): 21-37 ISSN: 2448-8011. Retrieved from: https://www.medigraphic.com/pdfs/forense/mmf-2020/mmf203c.pdf
 
 
+The Editors of Encyclopaedia Britannica (n.d.) "conservation of momentum physics". Retrived from https://www.britannica.com/science/conservation-of-momentum
+
 
 ### Disclaimer: 
 This project is protected under the GNU Licence v3, please refer to the document in case of any doubt towards referencing and usage of this project.
