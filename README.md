@@ -67,7 +67,6 @@ Note that as explained before, the transitions between the states of health will
 The information of every particle will be tracked and stored in a data file at every increment of time &delta; (t) with the purpose of graphing every frame of the simulation and joining the frames into a video of the complete simulation of the interaction between individuals and the progress of the COVID-19. Also, the data file is parsed to draw a graph with the fluctuation of the infected, recovered and dead individuals along the time.
 
 
-The informa
 
 ### Software tools
 * `Python3`
