@@ -24,7 +24,7 @@ the behavior of one particle can be describe by the next equation p = mv where p
 
 ![image](https://user-images.githubusercontent.com/79944448/146283321-2b0f55a3-bd9d-41d0-a257-92d761413ddb.png) 
 
-The momentum of conservation can be seen as a vector than have a magnitude and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction because of the collisions of many molecules
+The momentum of conservation can be seen as a vector than have a magnitude and a direction. Momentum is conserved in all three physical directions at the same time. It is even more difficult when dealing with a gas because forces in one direction can affect the momentum in another direction because of the collisions of many molecules.
 
 
 
