@@ -1,5 +1,9 @@
+#!/usr/bin/env python3
+
 import math
 import random
+import numpy as np
+import sys
 
 class People():
     age=0
@@ -44,7 +48,7 @@ class Modelo():
     rt = 0
     A = 0
     B =0
-    def __init__(self,population,A,B,steps,prints,radii,dt,rt):
+    def __init__(self,population,A,B,steps,prints,radii,dt,rt,et,st):
         self.population = population
         self.steps = steps
         self.prints = prints
@@ -53,6 +57,37 @@ class Modelo():
         self.rt = rt
         self.A = A
         self.B = B
+        self.et = et
+        self.st = st
+    
+    def exposedtoInfected(self,p):
+        p.status=2
+        p.time_recovery = 0.0
+    
+    def infectedtoSR(self,p):
+        choice = np.random.choice([True,False],p=[0.03,0.97])
+        if choice:
+            p.status=4
+            p.time_recovery=0.0
+            p.velocity = [0.0,0.0]
+        else:
+            p.status=3
+            p.time_recovery = 0.0
+    
+    def severetoDR(self,p):
+        choice = np.random.choice([True,False],p=[0.88,0.12])
+        if choice:
+            p.status=-1
+            p.time_recovery = 0.0
+            p.velocity = [0.0,0.0]
+        else:
+            p.status=3
+            p.velocity = [1.0,1.0]
+            p.time_recovery
+    
+    def exposedtoInfected(self,p):
+        p.status=2
+        p.time_recovery = 0.0
 
     def intersection(self,k,m):
         a = k.position[0]
@@ -85,7 +120,13 @@ class Modelo():
                         b = -2*self.B+b
 
         distance = math.sqrt(math.pow(c-a,2)+math.pow(d-b,2))
-        if distance <= self.radii:
+        if distance <= self.radii and k.status not in [-1,4] and m.status not in [-1,4]:
+            if k.status in [1,2,4] and m.status==0:
+                m.status=1
+                m.time_recovery=0.0
+            elif k.status==0 and m.status in [1,2,4]:
+                k.status=1
+                k.time_recovery = 0.0
             return True
         else:
             return False
@@ -156,6 +197,7 @@ class Modelo():
         v = people.velocity[1]
         d = v*self.dt
         people.position[1] += d
+        people.time_recovery+=1.0
 
     
     def interaction(self):
@@ -166,15 +208,37 @@ class Modelo():
     
     def run(self):
         j=0
+
+        stats = {i:0 for i in range(-1,5)}
+        for i in self.population.particles:
+            stats[i.status]+=1
+        
+        print(f"#0\t{stats[0]}\t{stats[1]}\t{stats[2]}\t{stats[3]}\t{stats[4]}\t{stats[-1]}")
+        for k in self.population.particles:
+            k.print_people()
+
+        
         for i in range(self.steps):
             self.interaction()
 
             for k in self.population.particles:
                 self.integrate(k)
+                #k.print_people()
+                if k.status ==1 and k.time_recovery>=self.et:
+                    self.exposedtoInfected(k)
+                if k.status==2 and k.time_recovery>=self.rt:
+                    self.infectedtoSR(k)
+                if k.status==4 and k.time_recovery >=self.st:
+                    self.severetoDR(k)
             for k in self.population.particles:
                 self.fix_borders(k)
             j+=1
-            print(f"#\t{i+1}")
+            stats = {i:0 for i in range(-1,5)}
+            for p in self.population.particles:
+                stats[p.status]+=1
+            
+            print(f"#{i+1}\t{stats[0]}\t{stats[1]}\t{stats[2]}\t{stats[3]}\t{stats[4]}\t{stats[-1]}")
+            # print(f"#\t{i+1}")
             for k in self.population.particles:
                 k.print_people()
 
@@ -184,21 +248,10 @@ class Modelo():
     
 
 
-# p_1 = People(18,0,10,0.0,10,1,-0.1,0.1)
-# p_2 = People(20,2,0,0.0,11,1,0.1,-0.1)
-# p_3 = People(40,0,20,0.0,1,2,-0.4,0.7)
-# p_4 = People(90,4,5,0.0,1,1,0.2,1)
-# p_5 = People(50,1,1,0.0,0,0,1,1)
-# p_2.print_people()
-# p_3.print_people()
-# p_4.print_people()
-# partcs = [p_1,p_2,p_3,p_4]
-# print(partcs)
-# for i in partcs:
-#     i.print_people()
+
 
 pop = []
-steps=1000
+steps=5000
 prints=1
 radii = 2
 A = 100.0
@@ -207,18 +260,30 @@ v_A = 1.0
 v_B = 1.0
 dt=0.1
 rt = 1000.0
-for i in range(100):
+et = 300.0
+st = 300.0
+porc_exp = float(sys.argv[1])
+for i in range(int(100*(1-porc_exp))):
+
     x = random.uniform(-A/2,A/2)
     y = random.uniform(-B/2,B/2)
     v_1 = random.uniform(-v_A/2,v_A/2)
     v_2 = random.uniform(-v_B/2,v_B/2)
-    pop.append(People(18,1,1,0,x,y,v_1,v_2))
+    pop.append(People(18,0,0,0.0,x,y,v_1,v_2))
+
+for i in range(int(100*porc_exp)):
+    x = random.uniform(-A/2,A/2)
+    y = random.uniform(-B/2,B/2)
+    v_1 = random.uniform(-v_A/2,v_A/2)
+    v_2 = random.uniform(-v_B/2,v_B/2)
+    pop.append(People(18,0,1,0.0,x,y,v_1,v_2))
+
 
 # for i in pop:
 #     i.print_people()
 population = Population(pop)
-print(f"#{1000}\t{100}\t{-A/2}\t{A/2}\t{-B/2}\t{B/2}\t{radii/2.0}")
-mod = Modelo(population,A,B,steps,prints,radii,dt,rt)
+print(f"#{10000}\t{100}\t{-A/2}\t{A/2}\t{-B/2}\t{B/2}\t{radii/2.0}")
+mod = Modelo(population,A,B,steps,prints,radii,dt,rt,et,st)
 mod.run()
 
 
