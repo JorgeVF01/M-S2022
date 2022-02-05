@@ -92,7 +92,7 @@ for this project we are simulating the pandemic propagation with a starting poin
 ```
 ./people.py 0.05 > view2D.dat
 ```
-The simulation results can be viewed by running the `viewStats.py` script, you will see a graph showing the progress of each pandemic state by its frequency over time. Run the script by typing this on the terminal:
+The simulation results can be viewed by running the `viewStats.py` script, you will see a graph showing the progress of each pandemic state by its frequency over time. Run the script by typing this in the terminal:
 
 ```
 ./viewStats.py
