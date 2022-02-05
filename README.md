@@ -76,7 +76,27 @@ As the programming language is python, somo of the basic libraries for plotting 
 * matplotlib
 * numpy
 * pandas
+* seaborn
 
+### Implementation
+In order to run the code you need to clone this repository and change the scrpits permission to an executable mode, you might use this command:
+```
+chmod 750 *.py
+```
+To run the model simulation you must specify the percentage of the population that will be initialized as exposed also you need to specify an output file where the information of the pandemic states and person updates at every iteration will be written, for example, if you want the 10% of the population to be infected at the beggining of the simulation you will run the scrpit with the next command:
+```
+./people.py 0.1 > view2D.dat
+```
+for this project we are simulating the pandemic propagation with a starting point of 5% of the population exposed to the virus, so if you want to get similar results as the presented in this project you must run the following command:
+
+```
+./people.py 0.05 > view2D.dat
+```
+The simulation results can be viewed by running the `viewStats.py` script, you will see a graph showing the progress of each pandemic state by its frequency over time. Run the script by typing this on the terminal:
+
+```
+./viewStats.py
+```
 ## References
 Kuzdeuov, A., Karabay, A., Baimukashev, D., Ibragimov, B., et al. (2020). "Particle-Based COVID-19 Simulator with Contact Tracing and Testing". Preprint for Medical and Healthe Services. [https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full](https://www.medrxiv.org/content/10.1101/2020.12.07.20245043v1.full)
 
