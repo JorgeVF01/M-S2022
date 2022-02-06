@@ -77,8 +77,21 @@ As the programming language is python, somo of the basic libraries for plotting 
 * numpy
 * pandas
 * seaborn
+## Results
 
-### Implementation
+In this project we work with 100 randomly scattered particles with the 5% of the population exposed to the virus as initial condition. Almost every change of state is a function of time, but we calculated two extra ratios for the change of state from infected to severe infected and on the change of state from severe infected and dead. These probabilities were obtained from the Secretaria de Salud COVID-19 data in December, 2021, also we only use the information of Morelia. All the process of getting the probabilities is in `data_cleaning.ipynb` and the probabilities are the following:
+* The probability of being severe infected after being infected is 1.28%.
+* The probability of being dead after being severe infected is 88.88%.
+
+Note that every infected person gets recovered after a period of time has passed but a severely infected person gets recovered with the inverse of the probability of being dead.
+
+Also we want to specify an important probability for a pandemic model, as a healthy person may not have serious symptoms if they get infected, also the probabilities for a healthy person dying from a virus are considerably lower than the probabilities of a person who has chronic diseases such as diabetes, cancer or asthma. From the Morelia data we also got results for this sector of the population.
+* 66.78% of the infected population sample of Morelia tested positive for COVID-19 and didn’t have any other disease.
+* The probability of a healthy person dying from the virus is only 3.14%.
+
+The code we used to get this probabilities is also in `data_cleaning.ipynb`.
+
+## Code running instructions
 In order to run the code you need to clone this repository and change the scrpits permission to an executable mode, you might use this command:
 ```
 chmod 750 *.py
