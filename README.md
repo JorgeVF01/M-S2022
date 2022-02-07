@@ -91,6 +91,17 @@ Also we want to specify an important probability for a pandemic model, as a heal
 
 The code we used to get this probabilities is also in `data_cleaning.ipynb`.
 
+With all the necessary probabilities  setted, the model is ready for the simulation, the pandemic interactions are simulated for 5,000 iterations, after running the model, we can see the pandemic propagation with the `viewStates.py` where the number of susceptible, exposed, infected, severe infected and dead particles at every iteration.
+
+![states](https://user-images.githubusercontent.com/80866685/152631738-8271c30e-d197-4395-b865-b092a2190fe3.png)
+
+Analyzing the plot we can see a pandemic behavior similar to the COVID-19, with a stage where the number of infected particles raises considerably and the number of immune individuals also starts to grow also with the severe infected ratio we can see that just a few of the particles got severe infected and with a high dead ratio almost every severe infected died after a period of iterations. 
+
+Due to the population size setted for the simulation, the pandemic propagation was at some point faster than a real life virus propagation, but with the COVID-19 we hope a similar final stage of the pandemic, where a high percentage of the population got infected and immune to the virus and the other part of the population did not get infected so the virus propagation stops, however, in the real scenario we know the virus mutes in order to still being contagious regardless the population immunity. Our simulation is not that far from the real scenario because the final stage of the simulation can also be seen like a virus control stage where the virus is still contagious but the most of the population got exposed to the virus so the number of infected, severe infected and dead individuals drops and gets almost constant at this final stage.
+
+In conclusion, we achieved the objectives setted in the project and developed an interesting pandemic propagation model that can be also used for modeling other pandemic propagation besides the main modeling of the project based on the COVID-19 spread, regardless all the complexity of the human interactions with other human beings and all the features that a human has, we managed to develop this pandemic propagation model and as mentioned before the model has the specifications in order to get results similar to a common pandemic behavior.
+
+
 ## Code running instructions
 In order to run the code you need to clone this repository and change the scrpits permission to an executable mode, you might use this command:
 ```
