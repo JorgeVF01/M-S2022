@@ -64,4 +64,4 @@ for line in data[1:]:
         plt.text(-45,-35, "Immune: "+immune, fontsize=12,color='g')
         plt.text(-45,-50, "Dead: "+dead,color='b', fontsize=12)        
         plt.draw()
-        fig.savefig("animation3/"+("%04d"%iteration)+"-view2D.png")
+        fig.savefig("animation/"+("%04d"%iteration)+"-view2D.png")
