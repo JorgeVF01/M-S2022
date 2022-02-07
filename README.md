@@ -101,6 +101,8 @@ Due to the population size setted for the simulation, the pandemic propagation w
 
 In conclusion, we achieved the objectives setted in the project and developed an interesting pandemic propagation model that can be also used for modeling other pandemic propagation besides the main modeling of the project based on the COVID-19 spread, regardless all the complexity of the human interactions with other human beings and all the features that a human has, we managed to develop this pandemic propagation model and as mentioned before the model has the specifications in order to get results similar to a common pandemic behavior.
 
+We also created an animation of the pandemic propagation using the information of the particles at every iteration and plotting the particles and using the plots for the iterations as frames of the animation, to plot every frame we used the `view.py` script, before running the script we created the ‘animation’ folder. [Here is the Animation.](https://youtu.be/T1TGYhn6Cfw)
+
 
 ## Code running instructions
 In order to run the code you need to clone this repository and change the scrpits permission to an executable mode, you might use this command:
