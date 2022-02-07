@@ -9,10 +9,6 @@ import matplotlib.patches as patches
 
 
 ccolor={0:'k',2:'r',1:'orange',3:'green',4:'purple',-1:'b'}
-# Data for plotting
-
-#t = np.arange(0.0, 2.0, 0.01)
-#s = 1 + np.sin(2 * np.pi * t)
 
 with open("view2D.dat") as f:
     data = f.readlines()
@@ -24,7 +20,6 @@ y_A = float(y_As)
 y_B = float(y_Bs)
 r_circle=float(r_circle)
 
-#print(data)
 iterations = iterations[1:]
 
 npeople = int(npeople)
@@ -51,11 +46,7 @@ for line in data[1:]:
         age, gender, status, time_recovery, position, velocity = line.split("\t")
         
         position = position[1:-1]
-        # print(position)
-        # print(line)
-        
         x,y = position.split(",")
-        # print(x,y)
         x = float(x)
         y=float(y)
         c=int(status)
@@ -73,6 +64,4 @@ for line in data[1:]:
         plt.text(-45,-35, "Immune: "+immune, fontsize=12,color='g')
         plt.text(-45,-50, "Dead: "+dead,color='b', fontsize=12)        
         plt.draw()
-        #plt.show()        
-        #break
         fig.savefig("animation3/"+("%04d"%iteration)+"-view2D.png")
