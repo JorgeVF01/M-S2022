@@ -43,7 +43,7 @@ for line in data[1:]:
         iteration=int(iteration[1:])
         plt.cla()
         ax.set(xlabel='x', ylabel='y',
-               title='TICS UNAM Transmission')
+               title='Pandemic Propagation')
         plt.axis([x_A, x_B,  y_A, y_B])        
         ax.grid()
         iterator = 0
