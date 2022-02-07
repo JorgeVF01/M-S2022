@@ -247,9 +247,6 @@ class Modelo():
 
     
 
-
-
-
 pop = []
 steps=5000
 prints=1
@@ -279,8 +276,6 @@ for i in range(int(100*porc_exp)):
     pop.append(People(18,0,1,0.0,x,y,v_1,v_2))
 
 
-# for i in pop:
-#     i.print_people()
 population = Population(pop)
 print(f"#{10000}\t{100}\t{-A/2}\t{A/2}\t{-B/2}\t{B/2}\t{radii/2.0}")
 mod = Modelo(population,A,B,steps,prints,radii,dt,rt,et,st)
